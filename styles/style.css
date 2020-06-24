@@ -1,0 +1,107 @@
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 8fr 1fr;
+    grid-gap: 5px;
+    height: 100%;
+    width: 100%;
+    max-width: 980px;
+ 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    background: lightgray;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+    background-color: lightgray;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+header:hover {
+    color: paleturquoise
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.services {
+    grid-area: services;
+}
+
+.discusion {
+    grid-area: discussion;
+
+}
+
+.housing {
+    grid-area: housing;
+
+}
+
+.for-sale {
+    grid-area: for-sale;
+
+}
+
+.jobs {
+    grid-area: jobs;
+
+}
+
+.gigs {
+    grid-area: gigs;
+
+}
+
+.section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "community housing jobs"
+        "community housing jobs"
+        "community housing jobs"
+        "services housing jobs"
+        "services housing jobs"
+        "discussion for-sale jobs"
+        "discussion for-sale gigs";
+}
+
+.location {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: lightgray;
+    margin: 5px;
+}
